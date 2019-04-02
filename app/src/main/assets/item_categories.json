@@ -1,0 +1,26 @@
+[
+   {
+      "id":"1",
+      "name":"Other"
+   },
+   {
+      "id":"2",
+      "name":"Drugs"
+   },
+   {
+      "id":"3",
+      "name":"Contraband"
+   },
+   {
+      "id":"4",
+      "name":"Arms"
+   },
+   {
+      "id":"5",
+      "name":"Electronics"
+   },
+   {
+      "id":"6",
+      "name":"Farmhand"
+   }
+]

@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">VPS</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_service_number">Service Number</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_forgot_password">Forgot Password</string>
+    <string name="action_login">Login</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="login_username">Username</string>
+
+    <!-- Home Grid Strings -->
+    <string name="home_title">Home</string>
+    <string name="occurence_book">Occurrence Book</string>
+    <string name="exhibit">Exhibit</string>
+    <string name="registers">Registers</string>
+    <string name="case_manager">Case Manager</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="dashboard">Dashboard</string>
+
+    <!-- OB Grid Strings -->
+    <string name="ob_report">OB Report</string>
+    <string name="ob_arrest">OB Arrest</string>
+    <string name="special_ob_entries">Special OB Entries</string>
+    <string name="view_ob">View OB</string>
+
+    <!-- Menu Strings -->
+    <string name="home_menu">Home</string>
+    <string name="settings_menu">Settings</string>
+    <string name="logout_menu">Log Out</string>
+
+    <!-- Personal Details Strings -->
+    <string name="pd_title">Personal Details</string>
+    <string name="pd_fname">First Name</string>
+    <string name="pd_mname">Middle Name</string>
+    <string name="pd_lname">Last Name</string>
+    <string name="pd_search">ID/Passport No.</string>
+    <string name="pd_phonenumber">Phone Number</string>
+    <string name="pd_nationality">Nationality</string>
+    <string name="pd_gender">Gender</string>
+
+    <!-- Place From Strings -->
+    <string name="pf_title">Place From</string>
+    <string name="pf_county">County</string>
+    <string name="pf_constituency">Constituency</string>
+
+    <!-- Button String -->
+    <string name="btn_next">Next</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_exit">Exit</string>
+
+    <!-- OccurrenceReportDetailsResult Details Strings -->
+    <string name="od_title">Occurrence Details</string>
+    <string name="od_ob_number">OB Number</string>
+    <string name="od_heading">Occurrence Heading</string>
+    <string name="od_reported_crime_area">Reported Crime Area</string>
+    <string name="od_narrative">Occurrence Narrative</string>
+
+    <!-- Reporter Details Strings -->
+    <string name="rd_title">Reporter Details</string>
+    <string name="rd_id_number">ID Number</string>
+    <string name="rd_full_name">Full Name</string>
+    <string name="rd_gender">Gender</string>
+    <string name="rd_phone_number">Phone number</string>
+    <string name="rd_nationality">Nationality</string>
+    <string name="rd_county">County</string>
+    <string name="rd_constituency">Constituency</string>
+    <string name="rd_btn_viewprofile">View Profile</string>
+
+    <!-- Officer Details Strings -->
+    <string name="ofd_title">Officer Details</string>
+    <string name="ofd_service_number">Service Number</string>
+    <string name="ofd_rank">Rank</string>
+    <string name="ofd_full_name">Full Name</string>
+
+    <!-- OccurrenceReportDetailsResult Details Buttons Strings -->
+    <string name="btn_link_occurence">Link Occurrence</string>
+    <string name="btn_link_exhibit">Link Exhibit</string>
+    <string name="btn_email_ob">Email OB</string>
+    <string name="btn_generate_abstract">Generate Abstract</string>
+    <string name="btn_resolve">Resolve</string>
+    <string name="btn_assign_officer">Assign Office</string>
+    <string name="btn_forward_to_dcio">Forward to DCIO</string>
+
+    <!-- OccurrenceReportDetailsResult Location -->
+    <string name="ol_title">Location</string>
+
+    <!-- Footer Text-->
+    <string name="footer">Virtual Police Station, Copyright ©, verve k.o</string>
+
+    <!-- Google maps key -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA4CWo-5CmsGlex2_zm6wAIS06BXBmVspU</string>
+
+    <!-- Tab strings -->
+    <string name="tab_fragment_report_caller">report</string>
+    <string name="tab_fragment_summary_caller">summary</string>
+    <string name="tab_header_reporter">Reporter</string>
+    <string name="tab_header_occurrence">Occurrence</string>
+    <string name="api_baseUrl">https://vps.or.ke/</string>
+    <string name="search_oc_location">Search Occurrence Location</string>
+
+    <!-- Location strings -->
+    <string name="msg_ok">OK</string>
+    <string name="vps_map_permission" translatable="false">
+        Please note, you wont be able to view the occurrence map, until you enable location permissions
+    </string>
+    <string name="vps_map_permission_settings" translatable="false">
+        Please note, you wont be able to search the occurrence map, until you enable location permissions in the VPS app settings
+    </string>
+    <string name="occurrence_map_prompt">
+        Please turn on the device location, for the occurrence map to work correctly
+    </string>
+    <string name="turn_on_device_location">Turn On</string>
+    <string name="search_map">Search Map</string>
+    <string name="save_occurrence_location">Save Occurrence Location</string>
+    <string name="search_hint">Search Location</string>
+    <string name="occurrence_location">Occurrence Location</string>
+    <string name="save_occurrence">Save Occurrence</string>
+    <string name="occurrence_area_txt">Location: %s</string>
+    <string name="change_oc_location">Change Occurrence Location</string>
+    <string name="oc_location_header">Location</string>
+
+    <!-- Form strings -->
+    <string name="search_user_id">Search ID</string>
+    <string name="invalid_id_number">Please enter a valid user ID number, with 6 or more numbers</string>
+    <string name="fetching_list_msg">Fetching Occurrence\'s List</string>
+    <string name="filter_report_txt">Filter Report</string>
+    <string name="search_ob_number">Search OB Number</string>
+
+    <!-- OB Action Strings -->
+    <string name="ob_actions">OB Actions</string>
+    <string name="loading_reporter_details">Loading Reporter Details</string>
+    <string name="generate_abstract_txt">Generate Abstract</string>
+    <string name="email_ob_txt">Email OB</string>
+    <string name="resolve_txt">Resolve</string>
+    <string name="assign_officer_txt">Assign Officer</string>
+    <string name="forward_ob_txt">Forward OB to DCIO</string>
+    <string name="link_occurrence_txt">Link Occurrence</string>
+    <string name="link_exhibit_txt">Link Exhibit</string>
+    <string name="ob_action_title">Select an OB Action</string>
+    <string name="pd_name">Name</string>
+    <string name="email_ob_action">Email</string>
+    <string name="example_ob_email">Enter email i.e. john.doe@gmail.com</string>
+    <string name="action_icon">Action Icon</string>
+    <string name="search_officer_by_sno">Search Officer by Service No</string>
+    <string name="related_occurrences_txt">Related Occurrences</string>
+    <string name="related_exhibits_txt">Related Exhibits</string>
+    <string name="exhibit_image_desc">Exhibit Image</string>
+    <string name="downloading_exhibit_image">Downloading exhibit image…</string>
+    <string name="fingerprint_placeholder_desc">Fingerprint Placeholder</string>
+</resources>

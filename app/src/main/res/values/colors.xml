@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#387ea0</color>
+    <color name="colorPrimaryDark">#2c6480</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="bg_color_dark">#1d2125</color>
+    <color name="bg_color_light">#33373a</color>
+    <color name="btnGreen">#1dae9b</color>
+    <color name="bgColor">#E0E0E0</color>
+    <color name="obTypeReportColor">#430b81</color>
+</resources>

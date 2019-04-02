@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:contentPadding="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="5dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <TextView
+                android:id="@+id/view_ob_header"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/form_header_padding"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/form_header_size"
+                android:text="@string/rd_title"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/form_section_padding"
+                app:alignItems="center"
+                app:flexWrap="wrap">
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/rd_id_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/rd_id_number"
+                        android:imeActionId="1"
+                        android:imeActionLabel="@string/rd_id_number"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="number"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/rd_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/rd_full_name"
+                        android:imeActionId="2"
+                        android:imeActionLabel="@string/rd_full_name"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/rd_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Gender"
+                        android:imeActionId="3"
+                        android:imeActionLabel="Gender"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/rd_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/rd_phone_number"
+                        android:imeActionId="4"
+                        android:imeActionLabel="@string/rd_phone_number"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="phone"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/rd_county"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="County"
+                        android:imeActionId="5"
+                        android:imeActionLabel="County"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/rd_constituency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Constituency"
+                        android:imeActionId="6"
+                        android:imeActionLabel="Constituency"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="phone"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

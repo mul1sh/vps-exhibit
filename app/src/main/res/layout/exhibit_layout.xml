@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:contentPadding="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="5dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Add Exhibit"
+                android:padding="@dimen/form_header_padding"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/form_header_size"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/form_section_padding"
+                app:alignItems="center"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
+
+
+
+
+
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_three">
+
+                <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="@dimen/spinner_label_padding_left"
+                        android:paddingStart="@dimen/spinner_label_padding_left"
+                        android:textColor="@android:color/black"
+                        android:text="@string/pd_nationality" />
+
+                <Spinner
+                        android:id="@+id/spinner_nationalities"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_three">
+
+                <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="@dimen/spinner_label_padding_left"
+                        android:paddingStart="@dimen/spinner_label_padding_left"
+                        android:textColor="@android:color/black"
+                        android:text="@string/pd_gender" />
+
+                <Spinner
+                        android:id="@+id/spinner_gender"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/search_field">
+
+                <EditText
+                        android:id="@+id/pd_phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/pd_phonenumber"
+                        android:imeActionId="6"
+                        android:imeActionLabel="@string/pd_phonenumber"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="numberSigned"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

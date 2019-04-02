@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:contentPadding="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="5dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Attach Exhibit Image"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/form_header_size"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/form_section_padding">
+
+
+            <com.github.chrisbanes.photoview.PhotoView
+                    android:id="@+id/exhibit_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/exhibit_image_desc"/>
+
+            <Button
+                    android:id="@+id/btnAttachImageFromCamera"
+                    android:layout_below="@id/exhibit_img"
+                    style="?android:textAppearanceSmall"
+                    android:drawableEnd="@drawable/ic_attach_file"
+                    android:drawablePadding="5dp"
+                    android:padding="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:text="From Camera"
+                    android:background="@color/btnGreen"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+            />
+
+
+            <Button
+                    android:id="@+id/btnAttachImageFromFile"
+                    android:layout_below="@id/exhibit_img"
+                    android:layout_alignParentEnd="true"
+                    style="?android:textAppearanceSmall"
+                    android:drawableEnd="@drawable/ic_attach_file"
+                    android:drawablePadding="5dp"
+                    android:padding="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:text="From Gallery"
+                    android:background="@color/btnGreen"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+            />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

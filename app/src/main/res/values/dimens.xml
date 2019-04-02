@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="input_label_vertical_spacing">8dp</dimen>
+    <dimen name="input_label_horizontal_spacing">4dp</dimen>
+    <dimen name="form_header_size">18sp</dimen>
+    <dimen name="form_header_padding">10dp</dimen>
+    <dimen name="form_layout_margin_top">10dp</dimen>
+    <dimen name="form_header_margin_top">5dp</dimen>
+    <dimen name="form_layout_margin_bottom">20dp</dimen>
+    <dimen name="form_section_padding">10dp</dimen>
+    <dimen name="spinner_label_padding_left">2dp</dimen>
+    <dimen name="occurrence_location_height">400dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="row_padding_vertical">10dp</dimen>
+
+    <!-- Gridview Values -->
+    <integer name="gridview_columns">3</integer>
+</resources>

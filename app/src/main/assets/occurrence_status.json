@@ -1,0 +1,42 @@
+[
+   {
+      "id":"1",
+      "description":"New"
+   },
+   {
+      "id":"2",
+      "description":"Assigned"
+   },
+   {
+      "id":"3",
+      "description":"Viewed"
+   },
+   {
+      "id":"4",
+      "description":"Resolved"
+   },
+   {
+      "id":"5",
+      "description":"Pending"
+   },
+   {
+      "id":"6",
+      "description":"Forwarded to DCIO"
+   },
+   {
+      "id":"7",
+      "description":"Assigned to DCIO"
+   },
+   {
+      "id":"8",
+      "description":"Closed"
+   },
+   {
+      "id":"9",
+      "description":"Closed by DCIO"
+   },
+   {
+      "id":"10",
+      "description":"Forwarded to OCPD"
+   }
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginStart="20dp"
+              android:layout_marginEnd="10dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ob_actions_recycler_view"
+            android:layout_width="match_parent"
+            android:numColumns="auto_fit"
+            android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

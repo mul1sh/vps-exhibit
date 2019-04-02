@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "55362888894",
+    "firebase_url": "https://vps-android-ob.firebaseio.com",
+    "project_id": "vps-android-ob",
+    "storage_bucket": "vps-android-ob.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55362888894:android:374ccdd17f0a440d",
+        "android_client_info": {
+          "package_name": "com.verve.vps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55362888894-7oap3kbsf4ti10qekdl8ouap2qtq526m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.verve.vps",
+            "certificate_hash": "e49cead72db6d7c66ce687755110daa5b1b1ec1f"
+          }
+        },
+        {
+          "client_id": "55362888894-k9nhjbr44apagm7q61diopotc46djlkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4CWo-5CmsGlex2_zm6wAIS06BXBmVspU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55362888894-k9nhjbr44apagm7q61diopotc46djlkd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

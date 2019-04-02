@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:contentPadding="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="5dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/pf_title"
+                android:padding="@dimen/form_header_padding"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/form_header_size"/>
+
+
+        <com.google.android.flexbox.FlexboxLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/form_section_padding"
+                app:alignItems="center"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingStart="@dimen/spinner_label_padding_left"
+                        android:textColor="@android:color/black"
+                        android:text="@string/pf_county" />
+
+                <Spinner
+                        android:id="@+id/spinner_counties"
+                        android:minWidth="200dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingStart="@dimen/spinner_label_padding_left"
+                        android:textColor="@android:color/black"
+                        android:text="@string/pf_constituency" />
+
+                <Spinner
+                        android:id="@+id/spinner_constituencies"
+                        android:minWidth="200dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

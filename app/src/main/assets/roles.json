@@ -1,0 +1,42 @@
+[
+    {
+       "id":"1",
+       "role":"Super Admin"
+    },
+    {
+       "id":"2",
+       "role":"County Commander"
+    },
+    {
+       "id":"3",
+       "role":"Ocs"
+    },
+    {
+       "id":"4",
+       "role":"Police Officer"
+    },
+    {
+       "id":"5",
+       "role":"Ocpd"
+    },
+    {
+       "id":"6",
+       "role":"DCIO"
+    },
+    {
+       "id":"7",
+       "role":"DCI"
+    },
+    {
+       "id":"8",
+       "role":"Armourer"
+    },
+    {
+       "id":"11",
+       "role":"Regional Commander"
+    },
+    {
+       "id":"12",
+       "role":"Regional Commander"
+    }
+]

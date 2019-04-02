@@ -1,0 +1,18 @@
+[
+   {
+      "id":"1",
+      "name":"No unit"
+   },
+   {
+      "id":"2",
+      "name":"Kilograms"
+   },
+   {
+      "id":"3",
+      "name":"Litres"
+   },
+   {
+      "id":"4",
+      "name":"Rolls"
+   }
+]

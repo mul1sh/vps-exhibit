@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorAccent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+
+    <ProgressBar
+            android:id="@+id/fetch_occurrences"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginTop="10dp"
+            android:indeterminateTint="@color/bg_color_dark"
+            android:maxWidth="5dp"
+            android:visibility="gone"
+            android:indeterminate="true"/>
+
+
+    <TextView
+            android:id="@+id/txtFetchingOccurrences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:textColor="@color/bg_color_dark"
+    />
+
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/report_filters"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="5dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardElevation="3dp">
+
+        <EditText
+                android:id="@+id/search_ob_number"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:imeOptions="actionSearch"
+                android:hint="@string/search_ob_number"
+                android:layout_gravity="center_horizontal"
+                android:drawableEnd="@drawable/ic_search_white_24dp"
+                android:drawablePadding="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:inputType="text"
+                tools:ignore="TextFields"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                app:layout_flexBasisPercent="@fraction/form_field">
+
+
+            <Spinner
+                    android:id="@+id/spinner_ob_report_filter"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/view_ob_recycler_view"
+            android:layout_width="match_parent"
+            android:numColumns="1"
+            android:layout_weight="4"
+            android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+            android:id="@+id/btnLinkOccurrences"
+            android:layout_width="match_parent"
+            android:layout_weight="0.2"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@color/btnGreen"
+            android:text="Link Occurrence's"
+            android:textColor="@android:color/white"
+            app:finalCornerAngle="50dp"
+            app:initialCornerAngle="0dp"
+            app:spinning_bar_color="@android:color/white"
+            app:spinning_bar_padding="5dp"
+            app:spinning_bar_width="5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        tools:context=".activities.LoginActivity">
+
+    <ImageView android:layout_width="200dp"
+               android:layout_height="200dp"
+               android:layout_centerHorizontal="true"
+               android:src="@drawable/vps_login_bg"/>
+
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/login_card"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_centerInParent="true"
+            app:contentPadding="20dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="5dp">
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/service_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_service_number"
+                        android:drawableStart="@drawable/ic_person_black"
+                        android:drawablePadding="20dp"
+                        android:textColor="@android:color/black"
+                        android:inputType="number"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleDrawable="@drawable/password_toggle"
+                    app:passwordToggleTint="@color/black"
+                    app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password"
+                        android:drawableStart="@drawable/ic_lock_black"
+                        android:drawablePadding="20dp"
+                        android:textColor="@android:color/black"
+                        android:imeActionId="6"
+                        android:imeActionLabel="@string/action_login"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                    android:textColor="@color/btnGreen"
+                    android:id="@+id/btnForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:autoLink="web"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/action_forgot_password"/>
+
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@color/btnGreen"
+                    android:text="@string/action_login"
+                    android:textColor="@android:color/white"
+                    app:finalCornerAngle="50dp"
+                    app:initialCornerAngle="0dp"
+                    app:spinning_bar_color="@android:color/white"
+                    app:spinning_bar_padding="5dp"
+                    app:spinning_bar_width="5dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/animate_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="invisible"
+    />
+
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:contentPadding="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="5dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/form_header_margin_top"
+                android:padding="@dimen/form_header_padding"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/form_header_size"
+                android:text="@string/ofd_title"/>
+
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/form_section_padding"
+                app:alignItems="center"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_flexBasisPercent="@fraction/form_field_three">
+
+                    <EditText
+                            android:id="@+id/ofd_service_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/ofd_service_number"
+                            android:imeActionLabel="@string/ofd_service_number"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="number"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:singleLine="true" android:importantForAutofill="no"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_flexBasisPercent="@fraction/form_field_60">
+
+                    <EditText
+                            android:id="@+id/ofd_rank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/ofd_rank"
+                            android:imeActionLabel="@string/ofd_rank"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="text"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_flexBasisPercent="@fraction/search_field">
+
+                    <EditText
+                            android:id="@+id/ofd_full_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/ofd_full_name"
+                            android:imeActionLabel="@string/ofd_full_name"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="text"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

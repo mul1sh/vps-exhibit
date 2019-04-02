@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:contentPadding="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="5dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/form_header_padding"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/form_header_size"
+                android:text="@string/od_title"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/form_section_padding"
+                app:alignItems="center"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/od_ob_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_flexBasisPercent="@fraction/search_field">
+
+                <EditText
+                        android:id="@+id/ob_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/od_ob_number"
+                        android:imeActionLabel="@string/od_ob_number"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/search_field">
+
+                <EditText
+                        android:id="@+id/od_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/od_heading"
+                        android:imeActionLabel="@string/od_heading"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/od_reported_crime_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_flexBasisPercent="@fraction/search_field">
+
+                <EditText
+                        android:id="@+id/od_reported_crime_area_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/od_reported_crime_area"
+                        android:imeActionLabel="@string/od_reported_crime_area"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/search_field">
+
+                <EditText
+                        android:id="@+id/od_narrative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/od_narrative"
+                        android:imeActionLabel="@string/od_narrative"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:inputType="textMultiLine"
+                        android:lines="15"
+                        android:minLines="2"
+                        android:maxLines="15"
+                        android:gravity="top|start"
+                        android:scrollbars="vertical"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

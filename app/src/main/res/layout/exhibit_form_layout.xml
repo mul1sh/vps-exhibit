@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+        <ProgressBar
+                android:id="@+id/fetching_officers"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:indeterminateTint="@color/btnGreen"
+                android:visibility="gone"
+                android:indeterminate="true"/>
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp">
+            <include layout="@layout/add_exhibit_layout"/>
+            <include layout="@layout/attach_exhibit_image"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_layout_margin_top"
+                android:orientation="horizontal"
+                android:gravity="bottom|end" >
+
+            <Button
+                    android:id="@+id/btnClear"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:textStyle="bold"
+                    android:text="Clear"
+                    android:background="@android:color/holo_red_dark"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                    android:id="@+id/btnSaveExhibit"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:textStyle="bold"
+                    android:text="Save"
+                    android:background="@color/btnGreen"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    app:finalCornerAngle="50dp"
+                    app:initialCornerAngle="0dp"
+                    app:spinning_bar_color="@android:color/white"
+                    app:spinning_bar_padding="5dp"
+                    app:spinning_bar_width="5dp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

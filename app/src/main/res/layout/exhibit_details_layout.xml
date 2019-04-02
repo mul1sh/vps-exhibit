@@ -1,0 +1,269 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:contentPadding="10dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="5dp">
+
+        <ProgressBar
+                android:id="@+id/fetching_exhibit_details"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"/>
+
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="@dimen/form_header_padding"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/form_header_size"
+                android:text="Exhibit Details"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/form_section_padding"
+                android:layout_marginTop="40dp"
+                app:flexWrap="wrap">
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/exhibit_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Exhibit Category"
+                        android:imeActionId="6"
+                        android:imeActionLabel="Exhibit Category"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="number"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:enabled="false"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/exhibit_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Exhibit Status"
+                        android:imeActionId="6"
+                        android:imeActionLabel="Exhibit Status"
+                        android:enabled="false"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/item_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Item Category"
+                        android:imeActionId="6"
+                        android:imeActionLabel="Item Category"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:enabled="false"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/item_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Item Type"
+                        android:imeActionId="6"
+                        android:imeActionLabel="Item Type"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="phone"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:enabled="false"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/serial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Serial"
+                        android:imeActionId="6"
+                        android:imeActionLabel="Serial"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:enabled="false"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Quantity"
+                        android:imeActionId="6"
+                        android:imeActionLabel="Quantity"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:enabled="false"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Unit"
+                        android:imeActionId="6"
+                        android:imeActionLabel="Unit"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:enabled="false"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/form_field_two">
+
+                <EditText
+                        android:id="@+id/officer_in_charge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Officer In Charge"
+                        android:imeActionLabel="Officer In Charge"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:enabled="false"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="@fraction/full_width">
+
+                <EditText
+                        android:id="@+id/exhibit_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Description"
+                        android:imeActionLabel="Description"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:enabled="false"
+                        android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                <ProgressBar
+                        android:id="@+id/loading_exhibit_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:indeterminate="true"
+                        android:visibility="gone"/>
+
+                <ImageView
+                        android:id="@+id/exhibit_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/exhibit_image_desc"/>
+
+            </LinearLayout>
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

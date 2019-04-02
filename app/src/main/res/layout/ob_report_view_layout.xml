@@ -1,0 +1,64 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+            <include layout="@layout/reporter_details_layout"/>
+            <include layout="@layout/occurrence_details_layout"/>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/form_layout_margin_top"
+                    android:orientation="horizontal"
+                    android:gravity="bottom|end" >
+
+                <Button
+                        android:id="@+id/btnCancel"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:textStyle="bold"
+                        android:text="@string/btn_cancel"
+                        android:background="@android:color/holo_red_dark"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                        android:id="@+id/btnSubmit"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:textStyle="bold"
+                        android:text="@string/btn_submit"
+                        android:background="@color/btnGreen"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        app:finalCornerAngle="50dp"
+                        app:initialCornerAngle="0dp"
+                        app:spinning_bar_color="@android:color/white"
+                        app:spinning_bar_padding="5dp"
+                        app:spinning_bar_width="5dp"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+</ScrollView>

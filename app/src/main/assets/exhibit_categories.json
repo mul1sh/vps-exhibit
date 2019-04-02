@@ -1,0 +1,14 @@
+[
+  {
+    "id":"PUI",
+    "name":"Pending Unknown Investigation"
+  },
+  {
+    "id":"PAKA",
+    "name":"Pending A Known Arrest"
+  },
+  {
+    "id":"other",
+    "name":"Other"
+  }
+]

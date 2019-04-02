@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingTop="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+    <CheckBox android:id="@+id/checkbox_select_exhibit"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:scaleX="2"
+              android:scaleY="2"
+              android:buttonTint="@color/btnGreen"
+              android:visibility="gone"
+              android:focusable="true"
+              android:clickable="true"
+    />
+
+    <TextView
+            android:id="@+id/txtExhibitName"
+            android:layout_toEndOf="@id/checkbox_select_exhibit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bg_color_dark"/>
+
+
+    <TextView
+            android:id="@+id/txtExhibitType"
+            android:layout_below="@id/txtExhibitName"
+            android:layout_toEndOf="@id/checkbox_select_exhibit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:textColor="@color/bg_color_light"/>
+
+
+    <TextView
+            android:id="@+id/txtExhibitCategoryType"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txtExhibitType"
+            android:layout_toEndOf="@id/checkbox_select_exhibit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bg_color_light"/>
+
+    <TextView
+            android:id="@+id/txtExhibitCategory"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txtOBDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:textColor="@color/bg_color_light"/>
+
+
+    <TextView
+            android:id="@+id/txtExhibitId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@color/bg_color_dark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+</RelativeLayout>

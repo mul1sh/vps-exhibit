@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="form_field" type="fraction">30%</item>
+    <item name="form_field_two" type="fraction">40%</item>
+    <item name="search_field" type="fraction">100%</item>
+    <item name="full_width" type="fraction">95%</item>
+</resources>
