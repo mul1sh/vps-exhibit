@@ -57,8 +57,7 @@ class OBFragment : Fragment() {
                         var fragmentSelected = true
                         when (i) {
                             0 -> newFragment = OBReportFragment()
-                            1 -> newFragment = OBArrestFragment()
-                            3 -> newFragment = ViewOBFragment()
+                            1 -> newFragment = ViewOBFragment()
                             else -> fragmentSelected = false
                         }
 
@@ -78,15 +77,15 @@ class OBFragment : Fragment() {
     // get the gridview images
     private fun getGridViewImages():Array<Int> = arrayOf(
         R.drawable.ic_ob_report,
-        R.drawable.ic_ob_arrest,
-        R.drawable.ic_special_ob_entries,
+       // R.drawable.ic_ob_arrest,
+      //  R.drawable.ic_special_ob_entries,
         R.drawable.ic_view_ob)
 
     // get the gridview text
     private fun getGridViewText():Array<String> = arrayOf(
         parentActivity.resources.getString(R.string.ob_report),
-        parentActivity.resources.getString(R.string.ob_arrest),
-        parentActivity.resources.getString(R.string.special_ob_entries),
+       // parentActivity.resources.getString(R.string.ob_arrest),
+     //   parentActivity.resources.getString(R.string.special_ob_entries),
         parentActivity.resources.getString(R.string.view_ob))
 
 

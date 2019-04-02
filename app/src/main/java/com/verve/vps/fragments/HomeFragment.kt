@@ -83,23 +83,23 @@ class HomeFragment : androidx.fragment.app.Fragment() {
     // get the gridview images
     private fun getGridViewImages():Array<Int> = arrayOf(
         R.drawable.ic_occurrence_book,
-        R.drawable.ic_exhibit,
+        R.drawable.ic_exhibit
     //    R.drawable.ic_registers,
-        R.drawable.ic_case_manager,
+    //    R.drawable.ic_case_manager,
 
-        R.drawable.ic_crime_db,
-        R.drawable.ic_watchlist,
-        R.drawable.ic_dashboard
+      //  R.drawable.ic_crime_db,
+      //  R.drawable.ic_watchlist,
+       // R.drawable.ic_dashboard
     )
 
     // get the gridview text
     private fun getGridViewText():Array<String> = arrayOf(
         parentActivity.resources.getString(R.string.occurence_book),
-        parentActivity.resources.getString(R.string.exhibit),
-        "Prosecution",
-        "Crime DB",
-        "Police Watchlist",
-        "Analytics"
+        parentActivity.resources.getString(R.string.exhibit)
+       // "Prosecution",
+        //"Crime DB",
+        //"Police Watchlist",
+        //"Analytics"
 
     )
 
